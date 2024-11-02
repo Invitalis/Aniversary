@@ -1,0 +1,347 @@
+:root {
+    --primary-color: #9B111E;
+    --gold: #D4AF37;
+    --text-dark: #1A1A1A;
+    --text-light: #4A4A4A;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./fondo2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Cormorant Garamond', serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./eucalipto.jpeg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    z-index: 0;
+}
+
+.container {
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.invitation-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
+    border-radius: 2px;
+    padding: 0;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+
+header {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    background-image: url('fredyame1.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+.header-content {
+    position: relative;
+    padding-top: 20px;
+}
+
+.anniversary-number {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.nombres {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+.divider {
+    width: 70px;
+    height: 1px;
+    background: var(--gold);
+    margin: 20px auto;
+}
+
+.message-section {
+    margin: 5px 0;
+    padding: 0 20px;
+}
+
+.invitation-message {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--text-light);
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-bottom: 0;
+    white-space: pre-line;
+}
+
+.second-image {
+    width: 100%;
+    height: 400px;
+    background-image: url('fredyame2.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.date-section {
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.date {
+    font-size: 2.7rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.time {
+    font-size: 1.9rem;
+    color: var(--text-light);
+}
+
+.countdown {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-top: 20px;
+}
+
+.location {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-top: 15px;
+}
+
+.third-image {
+    width: 100%;
+    height: 400px;
+    background-image: url('fredyame3.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.details {
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.dress-code {
+    margin: 20px auto;
+    padding: 7px;
+    background: rgba(155, 17, 30, 0.1);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.dress-code-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.fourth-image {
+    width: 100%;
+    height: 400px;
+    background-image: url('fredyame4.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.action-buttons {
+    padding: 20px;
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 12px 30px;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.confirmation-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.fifth-image {
+    width: 100%;
+    height: 400px;
+    background-image: url('fredyame5.jpeg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.gift-message {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    color: var(--text-light);
+    margin: 20px 0;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+.watermark {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.watermark-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-light);
+    text-decoration: none;
+    border: 1px solid var(--text-light);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.watermark-link:hover {
+    background-color: var(--text-light);
+    color: var(--white);
+}
+
+@media (max-width: 480px) {
+    .invitation-card {
+        padding: 0;
+    }
+
+    .main-image,
+    .second-image,
+    .third-image,
+    .fourth-image,
+    .fifth-image {
+        height: 300px;
+    }
+
+    .nombres {
+        font-size: 2.5rem;
+    }
+
+    .invitation-message {
+        font-size: 1.7rem;
+        padding: 20px;
+    }
+
+    .location {
+        font-size: 1.2rem;
+    }
+
+    .dress-code {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+    
+    .dress-code-text {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+    .confirmation-text {
+        font-size: 0.8rem;
+        margin: 15px 0;
+    }
+
+    .gift-message {
+        font-size: 1.4rem;
+    }
+}
